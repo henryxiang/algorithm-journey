@@ -1,0 +1,9 @@
+// 用栈实现队列
+// 用队列实现栈
+	// 测试链接 : https://leetcode.cn/problems/implement-queue-using-stacks/
+		// 倒数据
+		// 从in栈，把数据倒入out栈
+		// 1) out空了，才能倒数据
+		// 2) 如果倒数据，in必须倒完
+	// 测试链接 : https://leetcode.cn/problems/implement-stack-using-queues/
+		// O(n)

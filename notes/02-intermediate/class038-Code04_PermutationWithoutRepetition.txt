@@ -1,0 +1,3 @@
+// 有重复项数组的去重全排列
+// 测试链接 : https://leetcode.cn/problems/permutations-ii/
+				// nums[j]没有来到过i位置，才会去尝试

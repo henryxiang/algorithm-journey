@@ -1,0 +1,5 @@
+// 会议室II
+// 给你一个会议时间安排的数组 intervals
+// 每个会议时间都会包括开始和结束的时间intervals[i]=[starti, endi]
+// 返回所需会议室的最小数量
+// 测试链接 : https://leetcode.cn/problems/meeting-rooms-ii/

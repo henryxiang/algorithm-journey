@@ -1,0 +1,16 @@
+// 另一棵树的子树
+// 给你两棵二叉树root和subRoot
+// 检验root中是否包含和subRoot具有相同结构和节点值的子树
+// 如果存在，返回true
+// 否则，返回false
+// 测试链接 : https://leetcode.cn/problems/subtree-of-another-tree/
+	// 不要提交这个类
+	// 方法1
+	// 暴力递归
+	// 时间复杂度O(n * m)
+	// 判断a和b这两棵树是否完全一样
+	// 方法2
+	// 二叉树先序序列化 + KMP算法匹配
+	// 时间复杂度O(n + m)
+	// 比对两个字符串是否相等
+	// a和b可能为null

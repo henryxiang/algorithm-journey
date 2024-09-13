@@ -1,0 +1,11 @@
+// 读取科学计数法表达的double数字
+// 如果输入的字符串代表double数字的科学计数法形式
+// 用StreamTokenizer读取会出错
+// 用StringTokenizer读取正确但比较费内存
+// 参考链接 : https://oi-wiki.org/lang/java-pro/
+		// test1();
+	// Kattio类IO效率很好，但还是不如StreamTokenizer
+	// 只有StreamTokenizer无法正确处理时，才考虑使用这个类
+	// 参考链接 : https://oi-wiki.org/lang/java-pro/
+	// StreamTokenizer无法正确读取
+	// StringTokenizer可以正确读取

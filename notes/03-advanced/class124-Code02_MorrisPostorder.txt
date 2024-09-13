@@ -1,0 +1,12 @@
+// Morris遍历实现后序遍历
+// 测试链接 : https://leetcode.cn/problems/binary-tree-postorder-traversal/
+	// 不提交这个类
+	// 提交如下的方法
+			if (mostRight != null) { // cur有左树
+				// 找到左树最右节点
+				// 注意左树最右节点的右指针可能指向空，也可能指向cur
+				// 判断左树最右节点的右指针状态
+				if (mostRight.right == null) { // 第一次到达
+				} else { // 第二次到达
+	// 以head为头的子树，树的右边界逆序收集
+	// 从from出发，类似单链表翻转，去翻转right指针的方向

@@ -1,0 +1,7 @@
+// 设计循环双端队列
+// 测试链接 : https://leetcode.cn/problems/design-circular-deque/
+	// 提交时把类名、构造方法改成 : MyCircularDeque
+	// 其实内部就是双向链表
+	// 常数操作慢，但是leetcode数据量太小了，所以看不出劣势
+	// 提交时把类名、构造方法改成 : MyCircularDeque
+	// 自己用数组实现，常数操作快，但是leetcode数据量太小了，看不出优势

@@ -1,0 +1,20 @@
+// 检查树上两节点间的路径是否是回文
+// 一颗树上有n个节点，编号1~n
+// 给定长度为n的数组parent, parent[i]表示节点i的父节点编号
+// 给定长度为n的数组s, s[i]表示节点i上是什么字符
+// 从节点a到节点b经过节点最少的路，叫做a和b的路径
+// 一共有m条查询，每条查询(a,b)，a和b的路径字符串是否是回文
+// 是回文打印"YES"，不是回文打印"NO"
+// 1 <= n <= 10^5
+// 1 <= m <= 10^5
+// parent[1] = 0，即整棵树的头节点一定是1号节点
+// 每个节点上的字符一定是小写字母a~z
+// 测试链接 : https://ac.nowcoder.com/acm/contest/78807/G
+// 提交以下的code，提交时请把类名改成"Main"，可以直接通过
+	// kpow[i] = k的i次方
+		// up是上坡hash值
+		// down是下坡hash值
+		// height是目前下坡的总高度
+	// Kattio类IO效率很好，但还是不如StreamTokenizer
+	// 只有StreamTokenizer无法正确处理时，才考虑使用这个类
+	// 参考链接 : https://oi-wiki.org/lang/java-pro/

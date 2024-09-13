@@ -1,0 +1,10 @@
+	// 哈希函数实例
+		// 打印支持哪些哈希算法
+		// 用具体算法名字构造实例
+		// 输入字符串返回哈希值
+//		for (String str : strs) {
+//			System.out.println(str);
+//		}
+//		for (String str : set) {
+//			System.out.println(str);
+//		}

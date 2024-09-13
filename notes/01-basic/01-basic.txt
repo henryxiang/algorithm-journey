@@ -1,0 +1,61 @@
+算法讲解001【入门】学习算法的语言问题以及如何开通gpt4
+算法讲解002【入门】从社会实验到入门提醒
+算法讲解003【入门】二进制和位运算
+算法讲解004【入门】选择、冒泡、插入排序
+算法讲解005【入门】对数器-验证的重要手段
+算法讲解006【入门】二分搜索
+算法讲解007【入门】时间复杂度和空间复杂度
+算法讲解008【入门】算法和数据结构简介
+算法讲解009【入门】单双链表及其反转-堆栈诠释
+算法讲解010【入门】链表入门题目-合并两个有序链表
+算法讲解011【入门】链表入门题目-两个链表相加
+算法讲解012【入门】链表入门题目-划分链表
+算法讲解013【入门】队列和栈 链表、数组实现
+算法讲解014【入门】队列和栈入门题目-栈和队列相互实现
+算法讲解015【入门】栈的入门题目-最小栈
+算法讲解016【入门】双端队列-双链表和固定数组实现
+算法讲解017【入门】二叉树及其三种序的递归实现
+算法讲解018【入门】二叉树遍历的非递归实现和复杂度分析
+
+# Coding Interview - Basics
+
+## Binary Number and Bit Manipulation
+
+- 2's complement
+- integer types, underflow and overflow
+- bitwise operations: & | ^ >> >>> <<
+- bitmask
+- some tricks
+  * remove all 1's
+  * xor
+
+## Basic Sorting Algorithm Implementations
+
+- selection sort
+- insertion sort
+- bubble sort
+
+## Advanced Sorting Algorithm Implementations
+
+- merge sort
+- quick sort
+- heap sort
+
+## Testing and Answer Verification
+
+- random testing data generation
+- brute-force solution
+- language API
+- testing framework (good to know)
+
+## Basic Data Structures
+
+- singly-linked list
+- doubly-linked list
+- dynamic array
+- stack
+- queue
+- heap
+- tree
+- hash map and hash set
+ 

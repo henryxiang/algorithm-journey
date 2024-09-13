@@ -1,0 +1,8 @@
+// 最小栈
+// 测试链接 : https://leetcode.cn/problems/min-stack/
+	// 提交时把类名、构造方法改成MinStack
+			} else { // !min.isEmpty() && val > min.peek()
+	// 提交时把类名、构造方法改成MinStack
+		// leetcode的数据在测试时，同时在栈里的数据不超过这个值
+		// 这是几次提交实验出来的，哈哈
+		// 如果leetcode补测试数据了，超过这个量导致出错，就调大

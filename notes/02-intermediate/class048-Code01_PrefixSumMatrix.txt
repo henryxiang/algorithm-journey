@@ -1,0 +1,2 @@
+// 利用二维前缀和信息迅速得到二维区域和
+// 测试链接 : https://leetcode.cn/problems/range-sum-query-2d-immutable/

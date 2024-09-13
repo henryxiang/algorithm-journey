@@ -1,0 +1,9 @@
+// 普通二叉树上寻找两个节点的最近公共祖先
+// 测试链接 : https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
+	// 不提交这个类
+	// 提交如下的方法
+			// 遇到空，或者p，或者q，直接返回
+			// 左树也搜到，右树也搜到，返回root
+			// 都没搜到返回空
+		// l和r一个为空，一个不为空
+		// 返回不空的那个

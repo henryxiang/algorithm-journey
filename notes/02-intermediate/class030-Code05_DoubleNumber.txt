@@ -1,0 +1,7 @@
+// 数组中有2种数出现了奇数次，其他的数都出现了偶数次
+// 返回这2种出现了奇数次的数
+// 测试链接 : https://leetcode.cn/problems/single-number-iii/
+			// nums中有2种数a、b出现了奇数次，其他的数都出现了偶数次
+		// eor1 : a ^ b
+		// Brian Kernighan算法
+		// 提取出二进制里最右侧的1

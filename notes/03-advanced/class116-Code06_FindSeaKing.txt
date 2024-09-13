@@ -1,0 +1,13 @@
+// 子数组里的海王数
+// 子数组的海王数首先必须是子数组上出现次数最多的数(水王数)，并且要求出现次数>=t，t是参数
+// 设计一个数据结构并实现如下两个方法
+// 1) MajorityChecker(int[] arr) : 用数组arr对MajorityChecker初始化
+// 2) int query(int l, int r, int t) : 返回arr[l...r]上的海王数，不存在返回-1
+// 测试链接 : https://leetcode.cn/problems/online-majority-element-in-subarray/
+	// 本实现只使用固定数组结构
+	// 其他语言的同学很容易改写
+	// 时间复杂度也保证了是最优
+		// 维护线段树一段范围，候选是谁
+		// 维护线段树一段范围，候选血量
+		// arr[0 ~ i]范围上
+		// (<v的数) + (==v但下标<=i的数)，有几个

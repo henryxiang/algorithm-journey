@@ -1,0 +1,17 @@
+// 最多线段重合问题
+// 测试链接 : https://www.nowcoder.com/practice/1ae8d0b6bb4e4bcdbf64ec491f63fc37
+// 测试链接 : https://leetcode.cn/problems/meeting-rooms-ii/
+// 请同学们务必参考如下代码中关于输入、输出的处理
+// 这是输入输出处理效率很高的写法
+// 提交以下的code，提交时请把类名改成"Main"，可以直接通过
+		// 堆的清空
+		// 线段一共有n条，line[0...n-1][2] : line[i][0] line[i][1], 左闭右闭
+		// 所有线段，根据开始位置排序，结束位置无所谓
+		// 比较器的用法
+		// line [0...n) 排序 : 所有小数组，开始位置谁小谁在前
+			// i : line[i][0] line[i][1]
+	// 小根堆，堆顶0位置
+	// 堆的大小
+	// 也找到了leetcode测试链接
+	// 测试链接 : https://leetcode.cn/problems/meeting-rooms-ii/
+	// 提交如下代码可以直接通过

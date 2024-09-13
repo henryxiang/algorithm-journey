@@ -1,0 +1,11 @@
+// KMP算法模版
+// 测试链接 : https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
+		// return s1.indexOf(s2);
+	// KMP算法
+		// s1中当前比对的位置是x
+		// s2中当前比对的位置是y
+		// O(m)
+		// O(n)
+	// 得到next数组
+		// i表示当前要求next值的位置
+		// cn表示当前要和前一个字符比对的下标

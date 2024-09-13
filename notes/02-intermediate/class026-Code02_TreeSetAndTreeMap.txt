@@ -1,0 +1,6 @@
+		// 底层红黑树
+		// TreeMap中，所有的key，<= 4且最近的key是什么
+		// TreeMap中，所有的key，>= 4且最近的key是什么
+			// System.out.println(set.pollLast());
+		// 堆，默认小根堆、如果要大根堆，定制比较器！
+		// 定制的大根堆，用比较器！

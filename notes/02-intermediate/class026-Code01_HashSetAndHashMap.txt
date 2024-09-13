@@ -1,0 +1,8 @@
+		// Integer、Long、Double、Float
+		// Byte、Short、Character、Boolean
+		// String等都有这个特征
+		// false，因为不同的内存地址
+		// true，因为它们的值是相同的
+		// 一般在笔试中，未必需要申请哈希表
+		// 上面的map2行为，可以被如下数组的行为替代
+		// 哈希表的增、删、改、查，都可以被数组替代，前提是key的范围是固定的、可控的

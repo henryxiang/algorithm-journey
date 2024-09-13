@@ -1,0 +1,23 @@
+// 不用递归，用迭代的方式实现二叉树的三序遍历
+	// 先序打印所有节点，非递归版
+	// 中序打印所有节点，非递归版
+	// 后序打印所有节点，非递归版
+	// 这是用两个栈的方法
+	// 后序打印所有节点，非递归版
+	// 这是用一个栈的方法
+			// 如果始终没有打印过节点，h就一直是头节点
+			// 一旦打印过节点，h就变成打印节点
+			// 之后h的含义 : 上一次打印的节点
+					// 有左树且左树没处理过
+					// 有右树且右树没处理过
+					// 左树、右树 没有 或者 都处理过了
+	// 用一个栈完成先序遍历
+	// 测试链接 : https://leetcode.cn/problems/binary-tree-preorder-traversal/
+	// 用一个栈完成中序遍历
+	// 测试链接 : https://leetcode.cn/problems/binary-tree-inorder-traversal/
+	// 用两个栈完成后序遍历
+	// 提交时函数名改为postorderTraversal
+	// 测试链接 : https://leetcode.cn/problems/binary-tree-postorder-traversal/
+	// 用一个栈完成后序遍历
+	// 提交时函数名改为postorderTraversal
+	// 测试链接 : https://leetcode.cn/problems/binary-tree-postorder-traversal/

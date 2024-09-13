@@ -1,0 +1,28 @@
+// 扩展中国剩余定理模版
+// 给出n个同余方程，求满足同余方程的最小正数解x
+// 一共n个同余方程，x ≡ ri(% mi)
+// 1 <= n <= 10^5
+// 0 <= ri、mi <= 10^12
+// 所有mi不一定互质
+// 所有mi的最小公倍数 <= 10^18
+// 测试链接 : https://www.luogu.com.cn/problem/P4777
+// 测试链接 : https://www.luogu.com.cn/problem/P1495
+// 提交以下的code，提交时请把类名改成"Main"，可以通过所有测试用例
+	// 扩展中国剩余定理模版
+		// ans = lcm * x + tail
+			// ans = m[i] * y + ri
+			// lcm * x + m[i] * y = ri - tail
+			// a = lcm
+			// b = m[i]
+			// c = ri - tail
+			// ax + by = gcd(a,b)，特解是，x变量
+			// ax + by = c，特解是，x变量 * (c/d)
+			// ax + by = c，最小非负特解x0 = (x * (c/d)) % (b/d) 取非负余数
+			// 通解 = x0 + (b/d) * n
+			// ans = lcm * x + tail，带入通解
+			// ans = lcm * (x0 + (b/d) * n) + tail
+			// ans = lcm * (b/d) * n + lcm * x0 + tail
+			// tail' = tail' % lcm'
+	// 讲解139 - 扩展欧几里得算法
+	// 讲解033 - 位运算实现乘法
+	// a*b过程每一步都%mod，这么写是防止溢出，也叫龟速乘

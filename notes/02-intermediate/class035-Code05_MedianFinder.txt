@@ -1,0 +1,2 @@
+// 快速获得数据流的中位数的结构
+	// 测试链接 : https://leetcode.cn/problems/find-median-from-data-stream/

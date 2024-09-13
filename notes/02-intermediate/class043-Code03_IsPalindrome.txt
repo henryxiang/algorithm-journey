@@ -1,0 +1,4 @@
+// 超级回文数中的一个小函数，本身也是一道题 : 判断一个数字是不是回文数
+// 测试链接 : https://leetcode.cn/problems/palindrome-number/
+		// 注意这么写是为了防止溢出
+		// 首尾判断

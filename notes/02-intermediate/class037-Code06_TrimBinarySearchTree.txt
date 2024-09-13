@@ -1,0 +1,6 @@
+// 修剪搜索二叉树
+// 测试链接 : https://leetcode.cn/problems/trim-a-binary-search-tree/
+	// 不提交这个类
+	// 提交以下的方法
+	// [low, high]
+		// cur在范围中

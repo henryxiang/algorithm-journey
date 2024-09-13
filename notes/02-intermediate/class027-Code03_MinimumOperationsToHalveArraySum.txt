@@ -1,0 +1,6 @@
+// 将数组和减半的最少操作次数
+// 测试链接 : https://leetcode.cn/problems/minimum-operations-to-halve-array-sum/
+	// 提交时把halveArray1改名为halveArray
+		// 大根堆
+		// sum，整体累加和，-> 要减少的目标！
+	// 提交时把halveArray2改名为halveArray

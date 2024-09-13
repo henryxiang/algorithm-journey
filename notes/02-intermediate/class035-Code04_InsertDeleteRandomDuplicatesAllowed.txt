@@ -1,0 +1,3 @@
+// 插入、删除和获取随机元素O(1)时间且允许有重复数字的结构
+	// 测试链接 :
+	// https://leetcode.cn/problems/insert-delete-getrandom-o1-duplicates-allowed/

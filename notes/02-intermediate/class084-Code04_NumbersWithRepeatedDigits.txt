@@ -1,0 +1,3 @@
+// 至少有1位重复的数字个数
+// 给定正整数n，返回在[1, n]范围内至少有1位重复数字的正整数个数
+// 测试链接 : https://leetcode.cn/problems/numbers-with-repeated-digits/

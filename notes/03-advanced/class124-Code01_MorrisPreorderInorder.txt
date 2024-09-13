@@ -1,0 +1,30 @@
+// Morris遍历实现先序和中序遍历
+// 测试链接 : https://leetcode.cn/problems/binary-tree-preorder-traversal/
+// 测试链接 : https://leetcode.cn/problems/binary-tree-inorder-traversal/
+	// 不提交这个类
+	// Morris遍历
+			if (mostRight != null) { // cur有左树
+				// 找到左树最右节点
+				// 注意左树最右节点的右指针可能指向空，也可能指向cur
+				// 判断左树最右节点的右指针状态
+				if (mostRight.right == null) { // 第一次到达
+				} else { // 第二次到达
+	// Morris遍历实现先序遍历
+	// 测试链接 : https://leetcode.cn/problems/binary-tree-preorder-traversal/
+	// 提交preorderTraversal方法，可以直接通过
+			if (mostRight != null) { // cur有左树
+				// 找到左树最右节点
+				// 注意左树最右节点的右指针可能指向空，也可能指向cur
+				// 判断左树最右节点的右指针状态
+				if (mostRight.right == null) { // 第一次到达
+				} else { // 第二次到达
+			} else { // cur无左树
+	// Morris遍历实现中序遍历
+	// 测试链接 : https://leetcode.cn/problems/binary-tree-inorder-traversal/
+	// 提交inorderTraversal方法，可以直接通过
+			if (mostRight != null) { // cur有左树
+				// 找到左树最右节点
+				// 注意左树最右节点的右指针可能指向空，也可能指向cur
+				// 判断左树最右节点的右指针状态
+				if (mostRight.right == null) { // 第一次到达
+				} else { // 第二次到达

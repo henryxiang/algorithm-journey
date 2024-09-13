@@ -1,0 +1,6 @@
+// 翻转对数量
+// 测试链接 : https://leetcode.cn/problems/reverse-pairs/
+	// 统计l...r范围上，翻转对的数量，同时l...r范围统计完后变有序
+	// 时间复杂度O(n * logn)
+		// 统计部分
+		// 正常merge

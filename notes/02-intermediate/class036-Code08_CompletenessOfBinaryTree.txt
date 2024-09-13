@@ -1,0 +1,6 @@
+// 验证完全二叉树
+// 测试链接 : https://leetcode.cn/problems/check-completeness-of-a-binary-tree/
+	// 不提交这个类
+	// 提交以下的方法
+	// 如果测试数据量变大了就修改这个值
+		// 是否遇到过左右两个孩子不双全的节点

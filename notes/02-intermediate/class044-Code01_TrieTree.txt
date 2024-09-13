@@ -1,0 +1,13 @@
+// 用类描述实现前缀树。不推荐！
+// 测试链接 : https://leetcode.cn/problems/implement-trie-ii-prefix-tree/
+	// 路是数组实现的
+	// 提交时把类名、构造方法改为Trie
+			for (int i = 0, path; i < word.length(); i++) { // 从左往右遍历字符
+				path = word.charAt(i) - 'a'; // 由字符，对应成走向哪条路
+		// 如果之前word插入过前缀树，那么此时删掉一次
+		// 如果之前word没有插入过前缀树，那么什么也不做
+		// 查询前缀树里，word单词出现了几次
+		// 查询前缀树里，有多少单词以pre做前缀
+	// 路是哈希表实现的
+	// 提交时把类名、构造方法改为Trie
+			for (int i = 0, path; i < word.length(); i++) { // 从左往右遍历字符

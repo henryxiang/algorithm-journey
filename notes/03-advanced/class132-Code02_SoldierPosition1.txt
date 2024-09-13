@@ -1,0 +1,29 @@
+// 炮兵阵地
+// 给定一个n * m的二维数组grid，其中的1代表可以摆放炮兵，0代表不可以摆放
+// 任何炮兵攻击范围是一个"十字型"的区域，具体是上下左右两个格子的区域
+// 你的目的是在gird里摆尽量多的炮兵，但要保证任何两个炮兵之间无法互相攻击
+// 返回最多能摆几个炮兵
+// 1 <= n <= 100
+// 1 <= m <= 10
+// 0 <= grid[i][j] <= 1
+// 测试链接 : https://www.luogu.com.cn/problem/P2704
+// 提交以下的code，提交时请把类名改成"Main"，可以通过所有测试用例
+//	// 打印num第m-1位到第0位的二进制状态
+//	public static void printBinary(int num) {
+//		for (int i = m - 1; i >= 0; i--) {
+//			System.out.print((num & (1 << i)) == 0 ? "0" : "1");
+//		}
+//		System.out.println();
+//	}
+//		m = 10;
+//		k = 0;
+//		prepare(0, 0);
+//		for (int i = 0; i < k; i++) {
+//			printBinary(sta[i]);
+//		}
+//		System.out.println("有效状态数量 : " + k);
+	// 第i行士兵状态为s，结合grid第i号的状况
+	// 返回摆放士兵的数量
+	// Kattio类IO效率很好，但还是不如StreamTokenizer
+	// 只有StreamTokenizer无法正确处理时，才考虑使用这个类
+	// 参考链接 : https://oi-wiki.org/lang/java-pro/

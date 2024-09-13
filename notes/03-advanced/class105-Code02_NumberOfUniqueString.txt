@@ -1,0 +1,5 @@
+// 独特子串的数量
+// 给你一个由数字组成的字符串s
+// 返回s中独特子字符串数量
+// 其中的每一个数字出现的频率都相同
+// 测试链接 : https://leetcode.cn/problems/unique-substrings-with-equal-digit-frequency/

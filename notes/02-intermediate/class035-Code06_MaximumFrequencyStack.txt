@@ -1,0 +1,5 @@
+// 最大频率栈
+	// 测试链接 : https://leetcode.cn/problems/maximum-frequency-stack/
+		// 出现的最大次数
+		// 每层节点
+		// 每一个数出现了几次

@@ -1,0 +1,15 @@
+// 位图的实现
+// Bitset(int size)
+// void add(int num)
+// void remove(int num)
+// void reverse(int num)
+// boolean contains(int num)
+	// 位图的实现
+	// 使用时num不要超过初始化的大小
+		// n个数字 : 0~n-1
+			// a/b如果结果想向上取整，可以写成 : (a+b-1)/b
+			// 前提是a和b都是非负数
+	// 对数器测试
+		// 实现的位图结构
+		// 直接用HashSet做对比测试
+			// number -> 0 ~ n-1，等概率得到
