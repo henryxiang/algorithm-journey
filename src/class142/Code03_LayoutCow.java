@@ -1,14 +1,15 @@
 package class142;
 
-// 小k的农场
-// 一共有n个农场，编号1~n，给定m条关系，每条关系是如下三种形式中的一种
-// 关系1 a b c : 表示农场a比农场b至少多种植了c个作物
-// 关系2 a b c : 表示农场a比农场b至多多种植了c个作物
-// 关系3 a b   : 表示农场a和农场b种植了一样多的作物
-// 如果关系之间能推出矛盾，打印"No"，不存在矛盾，打印"Yes"
-// 1 <= n、m <= 5 * 10^3
-// 1 <= c <= 5 * 10^3
-// 测试链接 : https://www.luogu.com.cn/problem/P1993
+// 布局奶牛
+// 编号1到编号n的奶牛从左往右站成一排，你可以决定任意相邻奶牛之间的距离
+// 有m1条好友信息，有m2条情敌信息，好友间希望距离更近，情敌间希望距离更远
+// 每条好友信息为 : u v w，表示希望u和v之间的距离 <= w，输入保证u < v
+// 每条情敌信息为 : u v w，表示希望u和v之间的距离 >= w，输入保证u < v
+// 你需要安排奶牛的布局，满足所有的好友信息和情敌信息
+// 如果不存在合法方案，返回-1
+// 如果存在合法方案，返回1号奶牛和n号奶牛之间的最大距离
+// 如果存在合法方案，并且1号奶牛和n号奶牛之间的距离可以无穷远，返回-2
+// 测试链接 : https://www.luogu.com.cn/problem/P4878
 // 提交以下的code，提交时请把类名改成"Main"，可以通过所有测试用例
 
 import java.io.BufferedReader;
@@ -19,9 +20,9 @@ import java.io.PrintWriter;
 import java.io.StreamTokenizer;
 import java.util.Arrays;
 
-public class Code02_KsFarm {
+public class Code03_LayoutCow {
 
-	public static int MAXN = 5001;
+	public static int MAXN = 1001;
 
 	public static int MAXM = 20001;
 
@@ -41,7 +42,7 @@ public class Code02_KsFarm {
 
 	public static int[] update = new int[MAXN];
 
-	public static int MAXQ = 20000001;
+	public static int MAXQ = 1000001;
 
 	public static int[] queue = new int[MAXQ];
 
@@ -49,15 +50,11 @@ public class Code02_KsFarm {
 
 	public static boolean[] enter = new boolean[MAXN];
 
-	public static int n, m;
+	public static int n, m1, m2;
 
 	public static void prepare() {
 		cnt = 1;
-		h = t = 0;
 		Arrays.fill(head, 0, n + 1, 0);
-		Arrays.fill(dist, 0, n + 1, Integer.MAX_VALUE);
-		Arrays.fill(update, 0, n + 1, 0);
-		Arrays.fill(enter, 0, n + 1, false);
 	}
 
 	public static void addEdge(int u, int v, int w) {
@@ -67,7 +64,11 @@ public class Code02_KsFarm {
 		head[u] = cnt++;
 	}
 
-	public static boolean spfa(int s) {
+	public static int spfa(int s) {
+		h = t = 0;
+		Arrays.fill(dist, 0, n + 1, Integer.MAX_VALUE);
+		Arrays.fill(update, 0, n + 1, 0);
+		Arrays.fill(enter, 0, n + 1, false);
 		dist[s] = 0;
 		update[s] = 1;
 		queue[t++] = s;
@@ -82,7 +83,7 @@ public class Code02_KsFarm {
 					dist[v] = dist[u] + w;
 					if (!enter[v]) {
 						if (++update[v] > n) {
-							return true;
+							return -1;
 						}
 						queue[t++] = v;
 						enter[v] = true;
@@ -90,42 +91,48 @@ public class Code02_KsFarm {
 				}
 			}
 		}
-		return false;
+		if (dist[n] == Integer.MAX_VALUE) {
+			return -2;
+		}
+		return dist[n];
 	}
 
 	public static void main(String[] args) throws IOException {
 		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 		StreamTokenizer in = new StreamTokenizer(br);
 		PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
-		in.nextToken();
-		n = (int) in.nval;
-		in.nextToken();
-		m = (int) in.nval;
+		in.nextToken(); n = (int) in.nval;
+		in.nextToken(); m1 = (int) in.nval;
+		in.nextToken(); m2 = (int) in.nval;
 		prepare();
+		// 0号点是连通超级源点，保证图的连通性
 		for (int i = 1; i <= n; i++) {
 			addEdge(0, i, 0);
 		}
-		for (int i = 1, type, u, v, w; i <= m; i++) {
-			in.nextToken(); type = (int) in.nval;
+		// 好友关系连边
+		for (int i = 1, u, v, w; i <= m1; i++) {
 			in.nextToken(); u = (int) in.nval;
 			in.nextToken(); v = (int) in.nval;
-			if (type == 1) {
-				in.nextToken();
-				w = (int) in.nval;
-				addEdge(u, v, -w);
-			} else if (type == 2) {
-				in.nextToken();
-				w = (int) in.nval;
-				addEdge(v, u, w);
-			} else {
-				addEdge(u, v, 0);
-				addEdge(v, u, 0);
-			}
+			in.nextToken(); w = (int) in.nval;
+			addEdge(u, v, w);
 		}
-		if (spfa(0)) {
-			out.println("No");
+		// 情敌关系连边
+		for (int i = 1, u, v, w; i <= m2; i++) {
+			in.nextToken(); u = (int) in.nval;
+			in.nextToken(); v = (int) in.nval;
+			in.nextToken(); w = (int) in.nval;
+			addEdge(v, u, -w);
+		}
+		// 根据本题的模型，一定要增加如下的边，不然会出错
+		for (int i = 1; i < n; i++) {
+			addEdge(i + 1, i, 0);
+		}
+		int ans = spfa(0);
+		if (ans == -1) {
+			out.println(ans);
 		} else {
-			out.println("Yes");
+			ans = spfa(1);
+			out.println(ans);
 		}
 		out.flush();
 		out.close();
