@@ -2,15 +2,15 @@
 
 前置知识
 
-讲解017、讲解018 \- 递归方式遍历二叉树、非递归方式遍历二叉树
+讲解017、讲解018 - 递归方式遍历二叉树、非递归方式遍历二叉树
 
 之前讲过的二叉树三种序的遍历
 
-不管是递归还是非递归的方式，时间复杂度为O\(n\)，额外空间复杂度为O\(树高\)
+不管是递归还是非递归的方式，时间复杂度为O(n)，额外空间复杂度为O(树高)
 
 Morris遍历解决的问题
 
-二叉树三种序的遍历，时间复杂度为O\(n\)，额外空间复杂度为O\(1\)
+二叉树三种序的遍历，时间复杂度为O(n)，额外空间复杂度为O(1)
 
 核心在于利用二叉树自身的空闲指针
 
@@ -18,7 +18,7 @@ Morris遍历解决的问题
 
 大厂面试时，一道普通的二叉树题目，可以先给出普通解法，
 
-然后和面试官聊Morris遍历的解法，可以增加印象分\(装逼用\)
+然后和面试官聊Morris遍历的解法，可以增加印象分(装逼用)
 
 工程上很多场合，内存空间非常有限，遍历二叉树时可以使用这种遍历
 
@@ -40,21 +40,21 @@ A，如果mostRight的右指针指向空，让其指向cur，然后cur向左移�
 
 B，如果mostRight的右指针指向cur，让其指向null，然后cur向右移动
 
-额外空间复杂度很明显是O\(1\)，但是时间复杂度依然为O\(n\)， _课上重点图解_
+额外空间复杂度很明显是O(1)，但是时间复杂度依然为O(n)， _课上重点图解_
 
 题目1
 
 Morris遍历实现先序和中序遍历
 
-测试链接 : https://leetcode\.cn/problems/binary\-tree\-preorder\-traversal/
+测试链接 : https://leetcode.cn/problems/binary-tree-preorder-traversal/
 
-测试链接 : https://leetcode\.cn/problems/binary\-tree\-inorder\-traversal/
+测试链接 : https://leetcode.cn/problems/binary-tree-inorder-traversal/
 
 题目2
 
 Morris遍历实现后序遍历
 
-测试链接 : [https://leetcode\.cn/problems/binary\-tree\-postorder\-traversal/](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
+测试链接 : [https://leetcode.cn/problems/binary-tree-postorder-traversal/](https://leetcode.cn/problems/binary-tree-postorder-traversal/)
 
 Morris遍历实现后序遍历，需要树上链表的翻转， _课上重点图解_
 
@@ -78,17 +78,17 @@ Morris方式遍历二叉树，每个节点最多到达2次，
 
 Morris遍历判断搜索二叉树
 
-测试链接 : [https://leetcode\.cn/problems/validate\-binary\-search\-tree/](https://leetcode.cn/problems/validate-binary-search-tree/)
+测试链接 : [https://leetcode.cn/problems/validate-binary-search-tree/](https://leetcode.cn/problems/validate-binary-search-tree/)
 
 题目4
 
 Morris遍历求二叉树最小高度
 
-测试链接 : https://leetcode\.cn/problems/minimum\-depth\-of\-binary\-tree/
+测试链接 : https://leetcode.cn/problems/minimum-depth-of-binary-tree/
 
 题目5
 
 Morris遍历求两个节点的最低公共祖先
 
-测试链接 : [https://leetcode\.cn/problems/lowest\-common\-ancestor\-of\-a\-binary\-tree/](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)
+测试链接 : [https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/](https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/)
 

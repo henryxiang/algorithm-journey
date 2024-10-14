@@ -2,9 +2,9 @@
 
 前置知识
 
-讲解098 \-  _乘法快速幂，本节课题目4需要_
+讲解098 -  _乘法快速幂，本节课题目4需要_
 
-讲解103 \-  _Manacher算法_
+讲解103 -  _Manacher算法_
 
 上期视频讲了Manacher算法、扩展KMP
 
@@ -16,11 +16,11 @@
 
 找到字符串s中最长的回文子串并返回
 
-测试链接 : [https://leetcode\.cn/problems/longest\-palindromic\-substring/](https://leetcode.cn/problems/longest-palindromic-substring/)
+测试链接 : [https://leetcode.cn/problems/longest-palindromic-substring/](https://leetcode.cn/problems/longest-palindromic-substring/)
 
 上节课内容：
 
-扩展串中的回文半径和真实回文长度的对应，真实长度 = p\[i\] \- 1
+扩展串中的回文半径和真实回文长度的对应，真实长度 = p[i] - 1
 
 扩展回文串结尾下标和真实回文串终止位置的对应，真实回文串终止位置 = 扩展回文串结尾下标 / 2
 
@@ -30,7 +30,7 @@
 
 返回字符串s的回文子串数量
 
-测试链接 : [https://leetcode\.cn/problems/palindromic\-substrings/](https://leetcode.cn/problems/palindromic-substrings/)
+测试链接 : [https://leetcode.cn/problems/palindromic-substrings/](https://leetcode.cn/problems/palindromic-substrings/)
 
 题目3
 
@@ -46,7 +46,7 @@
 
 返回最多能划分出几个这样的回文子串
 
-测试链接 : [https://leetcode\.cn/problems/maximum\-number\-of\-non\-overlapping\-palindrome\-substrings/](https://leetcode.cn/problems/maximum-number-of-non-overlapping-palindrome-substrings/)
+测试链接 : [https://leetcode.cn/problems/maximum-number-of-non-overlapping-palindrome-substrings/](https://leetcode.cn/problems/maximum-number-of-non-overlapping-palindrome-substrings/)
 
 题目4
 
@@ -56,9 +56,9 @@
 
 返回其中长度前k名的回文子串的长度乘积是多少
 
-如果奇数长度的回文子串个数不够k个，返回\-1
+如果奇数长度的回文子串个数不够k个，返回-1
 
-测试链接 : [https://www\.luogu\.com\.cn/problem/P1659](https://www.luogu.com.cn/problem/P1659)
+测试链接 : [https://www.luogu.com.cn/problem/P1659](https://www.luogu.com.cn/problem/P1659)
 
 题目5
 
@@ -70,5 +70,5 @@
 
 比如"aabb"，可以分成"aa"、"bb"
 
-测试链接 : https://www\.luogu\.com\.cn/problem/P4555
+测试链接 : https://www.luogu.com.cn/problem/P4555
 
